@@ -27,7 +27,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className={`${jetbrainsMono.variable} ${spaceGrotesk.variable} bg-black antialiased overflow-hidden font-mono`}>
+      <head>
+        <link href="https://api.fontshare.com/v2/css?f[]=tanker@400&display=swap" rel="stylesheet" />
+      </head>
+      <body className={`${jetbrainsMono.variable} ${spaceGrotesk.variable} bg-black antialiased overflow-hidden font-tanker`}>
         <LenisScroll />
         <WindowFrame>
           {children}

@@ -327,6 +327,12 @@ export default function FaultyTerminal({
         gl.canvas.height,
         gl.canvas.width / gl.canvas.height
       );
+
+      // Responsive Grid Logic: Increase density on mobile (width < 768px)
+      const isMobile = window.innerWidth < 768;
+      // If mobile, multiply grid density: X * 2, Y * 1.5 to show more characters
+      const responsiveGridMul = isMobile ? [gridMul[0] * 2, gridMul[1] * 1.5] : gridMul;
+      program.uniforms.uGridMul.value = new Float32Array(responsiveGridMul);
     }
 
     const resizeObserver = new ResizeObserver(() => resize());

@@ -16,7 +16,7 @@ export default function RotatingText() {
     }, []);
 
     return (
-        <span className="relative inline-block border border-gray-500 px-2 py-1 ml-2 text-gray-300 font-mono text-sm tracking-wider uppercase overflow-hidden align-middle">
+        <span className="relative inline-block border border-gray-200 px-2 py-1 ml-2 text-gray-200 font-tanker text-sm tracking-wider uppercase overflow-hidden align-middle text-2xl md:text-3xl">
             <span key={index} className="animate-slide-up inline-block">
                 {words[index]}
             </span>
