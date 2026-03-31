@@ -1,0 +1,30 @@
+{
+  "profile": {
+    "name": "ALVIN BINOY",
+    "alias": "alvo",
+    "taglines": ["CYBERSECURITY ANALYST", "FULL STACK DEV", "SYSTEMS RESEARCHER"],
+    "bio": "Pre-final year engineering scholar specializing in network security, applied cryptography, and software development. I bridge the gap between secure infrastructure and high-fidelity interactive design."
+  },
+  "stats": [
+    { "label": "EVENTS ARCHITECTED", "value": "02" },
+    { "label": "FOCUS", "value": "RED/BLUE TEAM" }
+  ],
+  "skills": {
+    "cyber": ["Cryptography", "Malware Analysis", "Penetration Testing", "Wireshark", "Linux / Bash"],
+    "dev": ["Next.js / React", "TypeScript", "Python", "C Programming", "Tailwind CSS"]
+  },
+  "projects": [
+    {
+      "title": "PHISHERMAN 2.0",
+      "role": "Co-Organizer",
+      "description": "Architected a premier tech event featuring Capture The Flag (CTF) and Bug Bounty competitions.",
+      "tech": ["CTF Infrastructure", "Security Auditing"]
+    },
+    {
+      "title": "Blue Team Bootcamp",
+      "role": "Speaker / Organizer",
+      "description": "Led an advanced cyber awareness bootcamp, developing custom syllabus and teaching materials.",
+      "tech": ["Cyber Awareness", "Defensive Security"]
+    }
+  ]
+}
