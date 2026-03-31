@@ -9,25 +9,27 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "@radix-ui/react-slot": "^1.2.4",
+    "@studio-freight/react-lenis": "^0.0.47",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "gsap": "^3.12.7",
+    "lucide-react": "^0.475.0",
+    "next": "15.0.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.0.7",
-    "tailwindcss": "4.0.0",
-    "clsx": "^2.1.1",
     "tailwind-merge": "^2.6.0",
-    "lucide-react": "^0.475.0",
-    "gsap": "^3.12.7",
-    "@gsap/react": "^2.1.2",
-    "@studio-freight/react-lenis": "^0.0.47"
+    "tailwindcss": "4.0.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@tailwindcss/postcss": "^4.0.0",
     "@types/node": "^20",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
-    "postcss": "^8",
-    "@tailwindcss/postcss": "^4.0.0",
     "eslint": "^8",
-    "eslint-config-next": "15.0.3"
+    "eslint-config-next": "15.0.3",
+    "postcss": "^8",
+    "typescript": "^5"
   }
 }

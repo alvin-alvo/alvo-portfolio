@@ -19,7 +19,7 @@ export default function Navbar() {
       ease: 'elastic.out(1, 0.5)',
       delay: 0.2
     });
-  }, { scope: navRef });
+  }, { scope: navRef, dependencies: [] });
 
   return (
     <nav className="fixed top-0 w-full z-50 border-b-4 border-black bg-background border-solid px-6 py-4 flex justify-between items-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">

@@ -24,7 +24,7 @@ export default function ContactView() {
       stagger: 0.1,
       ease: "power3.out",
     });
-  }, { scope: container });
+  }, { scope: container, dependencies: [] });
 
   return (
     <div ref={container} className="h-full flex flex-col gap-6 max-w-[1200px] mx-auto p-4 lg:p-8 overflow-hidden">
@@ -51,7 +51,7 @@ export default function ContactView() {
           <p className="font-bold text-sm uppercase leading-relaxed mb-6 text-gray-800">
             Open for freelance, collaboration, and security consulting engagements.
           </p>
-          <Button variant="primary" className="flex items-center gap-2">
+          <Button variant="neutral" className="flex items-center gap-2 w-full text-lg mt-4 h-12">
             <Mail size={16} strokeWidth={2.5} /> SEND MESSAGE
           </Button>
         </Card>

@@ -17,7 +17,7 @@ export default function StatusBar() {
       duration: 20,
       ease: "linear",
     });
-  }, { scope: marqueeRef });
+  }, { scope: marqueeRef, dependencies: [] });
 
   const statusText = "SYSTEM_STABLE // PACKET_LOSS: 0.02% // ENCRYPTION: AES-256-GCM // TRACE_ROUTE: COMPLETE // NODE_ALVO_ACTIVE // SYSTEM_STABLE";
 

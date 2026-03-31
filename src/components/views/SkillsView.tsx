@@ -36,7 +36,7 @@ export default function SkillsView() {
       stagger: 0.06,
       ease: "back.out(1.7)",
     });
-  }, { scope: container });
+  }, { scope: container, dependencies: [] });
 
   return (
     <div ref={container} className="h-full flex flex-col gap-6 max-w-[1200px] mx-auto p-4 lg:p-8 overflow-hidden">
