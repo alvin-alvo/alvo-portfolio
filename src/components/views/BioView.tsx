@@ -89,14 +89,21 @@ export default function BioView() {
             </div>
           </Card>
 
-          <Card className="bio-item flex-1 min-h-[120px] flex flex-col justify-end p-6 bg-white relative">
-            <div className="absolute top-4 left-4">
-              <Shield size={28} strokeWidth={2.5} />
+          <Card className="bio-item flex-1 min-h-[120px] flex flex-col p-5 bg-white overflow-hidden">
+            <div className="flex items-center gap-2 mb-3">
+              <Shield size={20} strokeWidth={2.5} className="text-[#ae2a00]" />
+              <h2 className="text-xl font-black uppercase tracking-tight">CERTIFICATIONS</h2>
             </div>
-            <h2 className="text-4xl lg:text-5xl font-black uppercase mb-1 tracking-tighter">CERT_01</h2>
-            <p className="font-bold text-xs uppercase text-gray-700 tracking-wider">
-              CERTIFIED ETHICAL HACKER // OSCP CANDIDATE
-            </p>
+            <div className="flex flex-col gap-2 flex-1 overflow-y-auto pr-2">
+              {db.certifications.map((cert, i) => (
+                <div key={i} className="flex items-start gap-2 border-b-2 border-dashed border-gray-200 pb-2 last:border-0 last:pb-0">
+                   <div className="w-1.5 h-1.5 bg-black rounded-full mt-1.5 shrink-0"></div>
+                   <p className="font-bold text-xs uppercase text-gray-700 leading-tight">
+                     {cert}
+                   </p>
+                </div>
+              ))}
+            </div>
           </Card>
 
         </section>

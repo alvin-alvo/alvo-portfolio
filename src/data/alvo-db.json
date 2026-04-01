@@ -2,29 +2,188 @@
   "profile": {
     "name": "ALVIN BINOY",
     "alias": "alvo",
-    "taglines": ["CYBERSECURITY ANALYST", "FULL STACK DEV", "SYSTEMS RESEARCHER"],
-    "bio": "Pre-final year engineering scholar specializing in network security, applied cryptography, and software development. I bridge the gap between secure infrastructure and high-fidelity interactive design."
+    "taglines": [
+      "CYBER SECURITY RESEARCHER",
+      "FULL STACK DEVELOPER",
+      "GRAPHIC DESIGNER"
+    ],
+    "bio": "Pre-final year Computer Science (Cyber Security) Engineering undergraduate with a strong foundation in Python, Network Security, and Modern Web Development. Experienced in architecting Zero-Trust frameworks, AI-driven workflows, and organizing state-level hackathons.",
+    "contact": {
+      "email": "alvinbinoy1905@gmail.com",
+      "location": "Thrissur, Kerala, India"
+    },
+    "socials": {
+      "github": "https://github.com/alvin-alvo",
+      "linkedin": "https://linkedin.com/in/alvin-binoy"
+    },
+    "languages": [
+      "English",
+      "Malayalam",
+      "Hindi"
+    ]
   },
   "stats": [
-    { "label": "EVENTS ARCHITECTED", "value": "02" },
-    { "label": "FOCUS", "value": "RED/BLUE TEAM" }
-  ],
-  "skills": {
-    "cyber": ["Cryptography", "Malware Analysis", "Penetration Testing", "Wireshark", "Linux / Bash"],
-    "dev": ["Next.js / React", "TypeScript", "Python", "C Programming", "Tailwind CSS"]
-  },
-  "projects": [
     {
-      "title": "PHISHERMAN 2.0",
-      "role": "Co-Organizer",
-      "description": "Architected a premier tech event featuring Capture The Flag (CTF) and Bug Bounty competitions.",
-      "tech": ["CTF Infrastructure", "Security Auditing"]
+      "label": "HACKATHONS PLACED",
+      "value": "03"
     },
     {
-      "title": "Blue Team Bootcamp",
-      "role": "Speaker / Organizer",
-      "description": "Led an advanced cyber awareness bootcamp, developing custom syllabus and teaching materials.",
-      "tech": ["Cyber Awareness", "Defensive Security"]
+      "label": "CGPA",
+      "value": "7.09"
+    },
+    {
+      "label": "FOCUS",
+      "value": "RED/BLUE TEAM"
     }
+  ],
+  "skills": {
+    "cyber": [
+      "Penetration Testing",
+      "Network Security",
+      "Cyber Forensics",
+      "Zero-Trust Architecture",
+      "Packet Analysis"
+    ],
+    "dev": [
+      "Next.js / React",
+      "Python & TS",
+      "Node.js & REST API",
+      "Tailwind CSS",
+      "Java & C",
+      "GCP & Firebase"
+    ],
+    "design": [
+      "UI/UX (Figma)",
+      "Graphic Design",
+      "Photography",
+      "Canva"
+    ]
+  },
+  "experience": [
+    {
+      "id": "KBA-INTERN",
+      "role": "Backend Developer Intern",
+      "company": "Kerala Blockchain Academy",
+      "type": "Remote",
+      "duration": "Jan 2025 - Feb 2025",
+      "description": "Built 'Coursemate', a student enrolment system using Node.js, ensuring secure data handling. Designed and optimized RESTful APIs for high-concurrency requests."
+    },
+    {
+      "id": "ICT-INTERN",
+      "role": "Android App Development Intern",
+      "company": "ICT Academy of Kerala",
+      "type": "Hybrid",
+      "duration": "Jul 2024 - Aug 2024",
+      "description": "Built 'UniDine', a campus food ordering app (Java/Firebase) that reduced canteen queues. Implemented real-time database triggers for order syncing."
+    },
+    {
+      "id": "TATA-INTERN",
+      "role": "Product Design & Development Intern",
+      "company": "TATA Jyothi Integrated Industrial Incubation Centre (IIIC)",
+      "type": "Onsite",
+      "duration": "Jan 2024 - Jan 2024",
+      "description": "Used Creo to design components, explored Yaskawa robotics, and gained hands-on manufacturing exposure. Documented work using GitHub and Markdown."
+    }
+  ],
+  "projects": [
+    {
+      "id": "SAFENET",
+      "title": "SafeNet: Zero-Trust Micro-Perimeter",
+      "tech": [
+        "Python",
+        "WireGuard"
+      ],
+      "description": "Engineered a Zero-Trust security tool for SOHO environments. Developed a Python backend automating WireGuard VPN configurations to mitigate lateral movement attacks."
+    },
+    {
+      "id": "ALVOCAM",
+      "title": "alvoCam: Privacy-First Camera",
+      "tech": [
+        "Flutter",
+        "Dart",
+        "Android SDK"
+      ],
+      "description": "Engineered a secure Android camera application capturing zero-metadata images. Integrated native EXIF manipulation for granular control over embedded data."
+    },
+    {
+      "id": "CHATFORENSICS",
+      "title": "ChatForensics",
+      "tech": [
+        "Python",
+        "Data Viz"
+      ],
+      "description": "Created a forensic tool to parse exported WhatsApp chat logs, automatically flagging offensive text patterns using keyword analysis and generating visual reports."
+    },
+    {
+      "id": "UYIRSAFE",
+      "title": "UyirSafe: AI Road Safety",
+      "tech": [
+        "React",
+        "AI Integration"
+      ],
+      "description": "Top 17/3000+ in TN Govt Hackathon. Integrated Teachable Machine models into a React dashboard to detect road accidents in real-time with a scalable alert system."
+    },
+    {
+      "id": "REVIVO",
+      "title": "Revivo: E-Waste Management",
+      "tech": [
+        "Next.js",
+        "Tailwind"
+      ],
+      "description": "2nd Runner-up in a National-Level Hackathon. Built a circular economy marketplace connecting e-waste generators with recyclers with a responsive UI."
+    },
+    {
+      "id": "PIMS",
+      "title": "Personal Information Management System",
+      "tech": [
+        "Python",
+        "Flask"
+      ],
+      "description": "A centralized system built using Flask helping individuals securely store, manage, and update various personal information categories."
+    }
+  ],
+  "leadership": [
+    {
+      "id": "CYBERTON",
+      "organization": "Cyberton (College Cyber Security Club)",
+      "role": "Cyber Awareness Trainer",
+      "description": "Conducted 'Blue Team Bootcamp' and interactive sessions on digital hygiene for school students. Mentored juniors on fundamental cybersecurity concepts."
+    },
+    {
+      "id": "PHISHERMEN",
+      "organization": "Phishermen",
+      "role": "Event Organizer & Lead Developer",
+      "description": "Orchestrated a state-level cybersecurity CTF and Bug Bounty event; handled promotion and technical setup."
+    },
+    {
+      "id": "IEDC",
+      "organization": "IEDC",
+      "role": "Technical Lead",
+      "description": "Delivered vocational training on Cyber Awareness for schools. Led the Technical & Creative Wing, designing graphic assets and managing logistics."
+    }
+  ],
+  "achievements": [
+    {
+      "title": "Bank of India Hackathon",
+      "description": "Secured Top 9 position in the PSB's FinTech & Cybersecurity Hackathon 2025 organized by Bank of India & IIT Hyderabad for developing 'Z-Credits', an alternative-data driven credit risk model."
+    }
+  ],
+  "education": [
+    {
+      "institution": "APJ Abdul Kalam Technological University | Jyothi Engineering College",
+      "degree": "BTech Computer Science and Engineering (Cyber Security)",
+      "duration": "Sep 2023 - Present",
+      "score": "CGPA: 7.09"
+    },
+    {
+      "institution": "St Augustine HSS Kuttanellur, Thrissur",
+      "degree": "Higher Secondary Education",
+      "duration": "Graduated Mar 2023",
+      "score": "92.5%"
+    }
+  ],
+  "certifications": [
+    "Coursera Project Network - Build a Small Simulated Network with Cisco Packet Tracer",
+    "Cisco Networking Academy - Introduction to Cyber Security"
   ]
 }

@@ -6,7 +6,7 @@ import { useGSAP } from '@gsap/react';
 import data from '@/data/alvo-db.json';
 import { AlvoDatabase } from '@/types/database';
 import { Card } from '@/components/ui/Card';
-import { ShieldCheck, Code2, Lock, Bug, Terminal as TerminalIcon, Globe, FileCode2, Braces, Cpu } from 'lucide-react';
+import { ShieldCheck, Code2, Lock, Bug, Terminal as TerminalIcon, Globe, FileCode2, Braces, Cpu, PenTool, LayoutTemplate, Camera, Image as ImageIcon } from 'lucide-react';
 
 const cyberIcons: Record<string, React.ReactNode> = {
   "Cryptography": <Lock size={16} strokeWidth={2.5} />,
@@ -22,6 +22,13 @@ const devIcons: Record<string, React.ReactNode> = {
   "Python": <Code2 size={16} strokeWidth={2.5} />,
   "C Programming": <Braces size={16} strokeWidth={2.5} />,
   "Tailwind CSS": <Cpu size={16} strokeWidth={2.5} />,
+};
+
+const designIcons: Record<string, React.ReactNode> = {
+  "UI/UX (Figma)": <LayoutTemplate size={16} strokeWidth={2.5} />,
+  "Graphic Design": <PenTool size={16} strokeWidth={2.5} />,
+  "Photography": <Camera size={16} strokeWidth={2.5} />,
+  "Canva": <ImageIcon size={16} strokeWidth={2.5} />,
 };
 
 export default function SkillsView() {
@@ -52,7 +59,7 @@ export default function SkillsView() {
       </header>
 
       {/* Skills Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 flex-1 min-h-0 overflow-hidden">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 flex-1 min-h-0 overflow-hidden">
 
         {/* Cyber Column */}
         <Card className="skill-item flex flex-col gap-3 p-5 overflow-hidden">
@@ -97,6 +104,31 @@ export default function SkillsView() {
                   <div
                     className="h-full bg-[#b2ff05]"
                     style={{ width: `${85 - i * 7}%` }}
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </Card>
+
+        {/* Design Column */}
+        <Card className="skill-item flex flex-col gap-3 p-5 overflow-hidden">
+          <div className="flex items-center gap-2 mb-2">
+            <PenTool size={22} strokeWidth={2.5} className="text-[#00c9ff]" />
+            <h3 className="font-black text-xl uppercase tracking-tight">DESIGN</h3>
+          </div>
+          <div className="flex flex-col gap-2 flex-1 min-h-0 overflow-y-auto pr-1">
+            {db.skills.design.map((skill, i) => (
+              <div
+                key={skill}
+                className="skill-item flex items-center gap-3 p-3 border-2 border-black bg-[#faf9f5] hover:bg-[#b2ff05] transition-colors"
+              >
+                {designIcons[skill] || <PenTool size={16} strokeWidth={2.5} />}
+                <span className="font-bold text-sm uppercase tracking-wide">{skill}</span>
+                <div className="ml-auto h-2 w-16 border-2 border-black overflow-hidden shrink-0">
+                  <div
+                    className="h-full bg-[#00c9ff]"
+                    style={{ width: `${80 - i * 5}%` }}
                   />
                 </div>
               </div>

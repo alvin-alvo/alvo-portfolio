@@ -8,12 +8,16 @@ import StatusBar from '@/components/ui/StatusBar';
 import BioView from '@/components/views/BioView';
 import SkillsView from '@/components/views/SkillsView';
 import ProjectsView from '@/components/views/ProjectsView';
+import ExperienceView from '@/components/views/ExperienceView';
+import LeadershipView from '@/components/views/LeadershipView';
 import ContactView from '@/components/views/ContactView';
 
 const viewMap: Record<TabKey, React.ReactNode> = {
   bio: <BioView />,
   skills: <SkillsView />,
   projects: <ProjectsView />,
+  experience: <ExperienceView />,
+  leadership: <LeadershipView />,
   contact: <ContactView />,
 };
 

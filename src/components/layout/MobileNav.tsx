@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import { User, Cpu, FolderOpen, Mail } from "lucide-react";
+import { User, Cpu, FolderOpen, Mail, Briefcase, Award } from "lucide-react";
 
-export type TabKey = "bio" | "skills" | "projects" | "contact";
+export type TabKey = "bio" | "skills" | "projects" | "experience" | "leadership" | "contact";
 
 interface MobileNavProps {
   activeTab: TabKey;
@@ -14,6 +14,8 @@ const tabs: { key: TabKey; label: string; icon: React.ReactNode }[] = [
   { key: "bio", label: "Bio", icon: <User size={22} strokeWidth={2.5} /> },
   { key: "skills", label: "Skills", icon: <Cpu size={22} strokeWidth={2.5} /> },
   { key: "projects", label: "Projects", icon: <FolderOpen size={22} strokeWidth={2.5} /> },
+  { key: "experience", label: "Exp", icon: <Briefcase size={22} strokeWidth={2.5} /> },
+  { key: "leadership", label: "Lead", icon: <Award size={22} strokeWidth={2.5} /> },
   { key: "contact", label: "Contact", icon: <Mail size={22} strokeWidth={2.5} /> },
 ];
 

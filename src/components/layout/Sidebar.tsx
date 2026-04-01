@@ -4,7 +4,7 @@ import React, { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { Button } from '@/components/ui/Button';
-import { User, Zap, FolderOpen, Mail, Download, Terminal } from 'lucide-react';
+import { User, Zap, FolderOpen, Mail, Download, Terminal, Briefcase, Award } from 'lucide-react';
 import type { TabKey } from '@/components/layout/MobileNav';
 
 interface SidebarProps {
@@ -16,7 +16,9 @@ const navItems: { key: TabKey; num: string; label: string; icon: React.ReactNode
   { key: 'bio', num: '00', label: 'BIO', icon: <User size={20} strokeWidth={2.5} /> },
   { key: 'skills', num: '01', label: 'SKILLS', icon: <Zap size={20} strokeWidth={2.5} /> },
   { key: 'projects', num: '02', label: 'PROJECTS', icon: <FolderOpen size={20} strokeWidth={2.5} /> },
-  { key: 'contact', num: '03', label: 'CONTACT', icon: <Mail size={20} strokeWidth={2.5} /> },
+  { key: 'experience', num: '03', label: 'EXPERIENCE', icon: <Briefcase size={20} strokeWidth={2.5} /> },
+  { key: 'leadership', num: '04', label: 'LEADERSHIP', icon: <Award size={20} strokeWidth={2.5} /> },
+  { key: 'contact', num: '05', label: 'CONTACT', icon: <Mail size={20} strokeWidth={2.5} /> },
 ];
 
 export default function Sidebar({ activeTab, onTabChange }: SidebarProps) {
